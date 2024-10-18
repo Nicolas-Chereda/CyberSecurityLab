@@ -10,7 +10,7 @@ window.onscroll = function() {
   
   function mostrarBotao() {
     const ancora = document.getElementById("ancora");
-    if (document.body.scrollTop > 6 || document.documentElement.scrollTop > 6) {
+    if (document.body.scrollTop > 300 || document.documentElement.scrollTop > 300) {
       ancora.style.display = "block";
     } else {
       ancora.style.display = "none";

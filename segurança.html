@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <title>Segurança Digital</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Aprenda as melhores práticas para proteger suas informações na internet.">
+    <meta name="keywords" content="Segurança, Internet, Informações, Proteção, Senhas, Criptografia">
+    <link rel="stylesheet" type="text/css" href="main.css">
+    <link rel="icon" type="image/png" href="img/segurança.png">
+    <script src="main.js"></script>
+</head>
+<body>
+
+    <header>
+        <nav class="navbar">
+            <div class="menu-logo">
+                <a href="#"><img src="img/segurança.png"></a>
+                <a href="#" id="empresa">CyberSecurity <center>Lab</center></a>
+            </div>
+            <div class="menu-itens">
+                <ul>
+                    <li><a href="index.html">Início</a></li>
+                    <li><a href="golpes.html">Golpes e Ataques</a></li>
+                    <li><a href="segurança.html">Segurança Digital</a></li>
+                    <li><a href="privacidade.html">Proteção e Privacidade</a></li>
+                </ul>
+            </div>
+        </nav>
+        <h1>Segurança Digital</h1>
+    </header>
+
+    <div class="container-cards">
+        <div class="card no-home" style="cursor: pointer;" onclick="window.location.href = '#contas-senhas' ">
+            <center><i class="fi fi-rr-key"></i></center>
+            <h3>Contas e Senhas</h3>
+            <p>Contas e senhas são a primeira linha de defesa online. Elas garantem que apenas usuários autorizados possam acessar suas informações e serviços.</p>
+        </div>
+
+        <div class="card no-home" style="cursor: pointer;" onclick="window.location.href = '#criptografia' ">
+            <center><i class="fi fi-rs-shield-check"></i></center>
+            <h3>Criptografia</h3>
+            <p>A criptografia é uma técnica que transforma dados em códigos para proteger informações sensíveis durante a transmissão ou armazenamento.</p>
+        </div> 
+    </div>
+
+    <div class="container-cards">
+        <div class="card no-home" style="cursor: pointer;" onclick="window.location.href = '#mecanismos-seguranca' ">
+            <center><i class="fi fi-rr-lock"></i></center>
+            <h3>Mecanismos de Segurança</h3>
+            <p>Mecanismos de segurança são ferramentas e práticas, como firewalls e antivírus, que protegem dispositivos e redes contra ameaças.</p>
+        </div>
+
+        <div class="card no-home" style="cursor: pointer;" onclick="window.location.href = '#ai-seguranca' ">
+            <center><i class="fi fi-rs-microchip-ai"></i></center>
+            <h3>Inteligência Artificial</h3>
+            <p>A Inteligência Artificial está sendo usada para identificar ameaças cibernéticas e reforçar a segurança digital através de análise de dados em tempo real.</p>
+        </div>
+    </div>
+
+    <div class="container-conteudo">
+        <main>
+            <section id="contas-senhas">
+                <h2>Contas e Senhas</h2>
+                <img src="img/img-senha.webp">
+                <article id="senhas-fortes">
+                    <h3>Senhas Fortes</h3>
+                    <p>Uma senha forte é a sua primeira linha de defesa. Para criar uma senha segura, misture letras maiúsculas e minúsculas, números e caracteres especiais. Evite usar informações pessoais, como nomes ou datas de nascimento, e nunca reutilize senhas em diferentes contas.</p>
+                    <p>Utilize também gerenciadores de senhas para armazená-las de forma segura. Eles podem gerar senhas aleatórias fortes e lembrar de todas por você.</p>
+                </article>
+                <article id="autenticacao-dois-fatores">
+                    <h3>Autenticação de Dois Fatores</h3>
+                    <p>Ativar a autenticação de dois fatores (2FA) é fundamental para proteger suas contas. Esse método adiciona uma camada extra de segurança, exigindo não apenas uma senha, mas também uma segunda verificação, como um código enviado por SMS ou um aplicativo autenticador.</p>
+                    <p>Essa técnica é altamente eficaz, pois mesmo que alguém descubra sua senha, sem a segunda forma de autenticação, eles não conseguirão acessar sua conta.</p>
+                </article>
+            </section>
+
+            <section id="criptografia">
+                <h2>Criptografia</h2>
+                <img src="img/img-criptografia.webp">
+                <article id="o-que-e-criptografia">
+                    <h3>O que é Criptografia?</h3>
+                    <p>A criptografia é o processo de codificação de informações para garantir que apenas as partes autorizadas possam acessá-las. Ela transforma os dados em um formato ilegível para quem não tem a chave correta para decriptação.</p>
+                    <p>A criptografia é amplamente usada em transações bancárias, mensagens privadas, e-mail, e no armazenamento de dados sensíveis, protegendo-os contra acessos não autorizados.</p>
+                </article>
+                <article id="porque-usar-criptografia">
+                    <h3>Por que usar Criptografia?</h3>
+                    <p>Usar criptografia é essencial para proteger a confidencialidade e a integridade dos dados. Se os seus dados forem interceptados, eles permanecerão inacessíveis e inúteis para quem não tiver a chave de criptografia.</p>
+                    <p>A criptografia é especialmente importante para dados financeiros, médicos e informações pessoais, garantindo que mesmo se houver uma violação de segurança, os dados continuarão protegidos.</p>
+                </article>
+            </section>
+
+            <section id="mecanismos-seguranca">
+                <h2>Mecanismos de Segurança</h2>
+                <img src="img/img-segurança.jpg">
+                <article id="antivirus-firewalls">
+                    <h3>Antivírus e Firewalls</h3>
+                    <p>Um software antivírus detecta e remove ameaças de malware do seu dispositivo. Ele oferece uma barreira entre seu computador e as ameaças cibernéticas. Já os firewalls monitoram o tráfego de rede, bloqueando acessos não autorizados.</p>
+                    <p>Certifique-se de manter seu antivírus atualizado e configurar um firewall robusto, especialmente se você utilizar redes públicas ou de trabalho remoto.</p>
+                </article>
+                <article id="atualizacoes-software">
+                    <h3>Atualizações de Software</h3>
+                    <p>Manter seu sistema operacional e aplicativos sempre atualizados é uma das maneiras mais simples e eficazes de evitar ataques cibernéticos. Muitas violações ocorrem porque as pessoas deixam de aplicar correções que corrigem vulnerabilidades.</p>
+                    <p>Ative atualizações automáticas sempre que possível para garantir que você esteja protegido contra as últimas ameaças.</p>
+                </article>
+                <article id="vpn">
+                    <h3>Uso de VPNs</h3>
+                    <p>Uma VPN (Rede Virtual Privada) criptografa sua conexão com a internet, tornando suas atividades online privadas e seguras. Ao usar uma VPN, você protege seus dados contra espionagem, especialmente quando usa redes Wi-Fi públicas.</p>
+                    <p>Escolha uma VPN confiável que não armazene registros de sua navegação e use sempre que se conectar fora de sua rede segura.</p>
+                </article>
+            </section>
+
+            <section id="ai-seguranca">
+                <h2>Inteligência Artificial e Segurança da Informação</h2>
+                <img src="img/img-chatgpt.jpg">
+                <article id="ia-usada-na-seguranca">
+                    <h3>Como a IA é usada na Segurança?</h3>
+                    <p>A Inteligência Artificial (IA) está sendo cada vez mais usada na detecção de ameaças, análise de padrões de ataques e resposta rápida a incidentes de segurança. Ela pode analisar grandes quantidades de dados em tempo real, identificando comportamentos anômalos que podem indicar uma tentativa de invasão.</p>
+                    <p>Ferramentas de segurança com IA são essenciais para monitorar redes e prever ataques, oferecendo uma camada de proteção proativa para empresas e indivíduos.</p>
+                </article>
+                <article id="desafios-ia-seguranca">
+                    <h3>Desafios da IA na Segurança</h3>
+                    <p>Embora a IA ofereça grandes benefícios na área de segurança, ela também traz desafios. Hackers podem usar IA para automatizar ataques cibernéticos, tornando-os mais rápidos e eficientes. Além disso, a IA pode ser enganada por ataques que exploram suas vulnerabilidades, como o uso de dados falsos.</p>
+                    <p>É fundamental combinar a IA com outras camadas de proteção e contar com supervisão humana para maximizar sua eficácia na defesa cibernética.</p>
+                </article>
+            </section>
+        </main>
+
+        <div class="navegacao-conteudo">
+            <section class="nav-item1">
+                <div class="nav-artigos">
+                    <a href="#senhas-fortes">Senhas Fortes</a>
+                    <a href="#autenticacao-dois-fatores">Autenticação de Dois Fatores</a>
+                </div>
+                <div class="nav-section">
+                    <a href="#contas-senhas">Contas e Senhas</a>
+                </div>
+            </section>
+
+            <section class="nav-item2">
+                <div class="nav-artigos">
+                    <a href="#o-que-e-criptografia">O que é Criptografia?</a>
+                    <a href="#porque-usar-criptografia">Por que usar Criptografia?</a>
+                </div>
+                <div class="nav-section">
+                    <a href="#criptografia">Criptografia</a>
+                </div>
+            </section>
+
+            <section class="nav-item3">
+                <div class="nav-artigos">
+                    <a href="#antivirus-firewalls">Antivírus e Firewalls</a>
+                    <a href="#atualizacoes-software">Atualizações de Software</a>
+                    <a href="#vpn">Uso de VPNs</a>
+                </div>
+                <div class="nav-section">
+                    <a href="#mecanismos-seguranca">Mecanismos de Segurança</a>
+                </div>
+            </section>
+
+            <section class="nav-item4">
+                <div class="nav-artigos">
+                    <a href="#ia-usada-na-seguranca">IA na Segurança</a>
+                    <a href="#desafios-ia-seguranca">Desafios da IA na Segurança</a>
+                </div>
+                <div class="nav-section">
+                    <a href="#ai-seguranca">Inteligência Artificial</a>
+                </div>
+            </section>
+        </div>
+    </div>
+
+    <footer>
+        <h5>Nicolas Pereira 2024 - &copy Todos os direitos reservados <br> *Trabalho acadêmico sem fins lucrativos*</h5>
+    </footer>
+
+</body>
+</html>

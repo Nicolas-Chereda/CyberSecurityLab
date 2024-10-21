@@ -1,8 +1,10 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=VT323&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=VT323&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
 @import url('https://cdn-uicons.flaticon.com/2.6.0/uicons-bold-rounded/css/uicons-bold-rounded.css');
 @import url('https://cdn-uicons.flaticon.com/2.6.0/uicons-regular-rounded/css/uicons-regular-rounded.css');
 @import url('https://cdn-uicons.flaticon.com/2.6.0/uicons-regular-straight/css/uicons-regular-straight.css');
 @import url('https://cdn-uicons.flaticon.com/2.6.0/uicons-brands/css/uicons-brands.css');
+
 
 *{
     margin: 0;
@@ -10,8 +12,12 @@
     box-sizing: border-box;
 }
 
+html{
+    scroll-behavior: smooth;
+}
+
 body{
-    font-family: "Roboto";
+    font-family: "Nunito", sans-serif;
     background-color: white;
     width: 100vw;
     overflow-x: hidden;
@@ -28,7 +34,7 @@ body{
     justify-content: center;
     flex-flow: row;
     height: 100px;
-    font-family: 'Roboto';
+    font-family: 'Nunito';
 }
 
 /*Logo da seleção de futebol da Espanha*/
@@ -73,9 +79,9 @@ body{
 }
 
 .menu-itens a{
-    font-size: 23px;
+    font-size: 22px;
     text-decoration: none;
-    font-weight: 800;
+    font-weight: 900;
     color: white;
 }
 
@@ -118,15 +124,15 @@ body{
 
 .home-frase{
     margin-left: 5%;
-    font-family: "Roboto", sans-serif;
+    font-family: "Nunito", sans-serif;
     flex: 40%;
     color: #1A2D5C;
 }
 
-.home-frase h2{
-    font-weight: 800;
+.home-frase h1{
+    font-weight: 900;
     margin-top: 2%;
-    font-size: 50px;
+    font-size: 40px;
     line-height: 1;
 }
 
@@ -146,7 +152,7 @@ body{
     text-transform: uppercase;
     margin-top: 20px;
     cursor: pointer;
-    font-family: 'Roboto';
+    font-family: 'Nunito', sans-serif;
     font-size: 18px;
 }
 
@@ -171,6 +177,7 @@ body{
     margin-right: 5%;
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
 }
 
 .card{
@@ -193,87 +200,149 @@ body{
 
 .card:hover{
     box-shadow: rgba(0, 0, 0, 0.8) 0px 5px 15px; 
-    transition: 0.5s ease-in;
+    transition: 0.3s ease-in;
 }
+
+/*Geral*/
+
+.no-home{
+    margin-top: 5%;    /*Cards fora da página home*/
+}
+
+h1, h2, h3, h4{
+    color: #1A2D5C;
+}
+
+header h1{
+    text-align: center;
+    margin: 2%;
+    font-weight: 900;
+    font-size: 48px;
+}
+
+.container-conteudo{
+    margin-top: 2%;
+    display: flex;
+    flex-flow: row nowrap;
+}
+
+main{
+    flex: 80%;
+    margin-left: 8%;
+    margin-right: 8%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: row wrap;
+}
+
+main img{
+    width: 100%;
+}
+
+main p, main li{
+    font-size: 20px;    
+    margin-bottom: 1%;
+}
+
+main li{
+    color: #1A2D5C;
+    margin-left: 5%;
+}
+
 
 main h2{
-    margin-top: 3%;
-    margin-bottom: 1%;
-    font-size: 24px;
-}
-
-main p{
+    font-size: 42px;
+    font-weight: 900;
     margin-bottom: 2%;
+    margin-top: 2%;
 }
 
-/*Carrossel*/
-.container-carrossel{
-    position: relative;
-    width: 100vw;
-    overflow: hidden;
-    margin: 0 auto;
-    max-height: 300px;
+main h3{
+    font-weight: 900;
+    font-size: 36px;
+    margin: 8% 0 4% 0;
 }
 
-.carrossel {
+main h4{
+    font-weight: 800;
+    font-size: 30px;
+    margin-top: 4%;
+    margin-bottom: 1%;
+}
+
+.navegacao-conteudo{
+    flex: 20%;
+    margin: 10% 5% 0 0;
+    height: 100%;
+    position: sticky;
+    top: 0%;
+    border-left: 3px solid ; 
+    border-image: linear-gradient(to bottom, transparent, #1A2D5C , transparent) 1;
+}
+
+.nav-artigos{
+    padding: 10px;
     display: flex;
-    transition: transform 0.5s ease-in-out;
+    flex-flow: column;
+    flex: 50%;
+    margin-top: 10%;
+    margin-bottom: 10%;
 }
 
-.slide, .slide img {
-    min-width: 100%;
+.nav-artigos a{
+    text-decoration: none;
+    display: block;
+    color: #1A2D5C;
+    font-size: 13px;
+    margin-bottom: 10%;
 }
 
-#prev, #next {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    color: white;
-    border: none;
-    cursor: pointer;
-    opacity: 0;
-    transition: 0.5s ease;
-    padding: 10px 10px 0 10px;
-    background-color: rgb(0,0,0,0.3);
+.nav-section{
+    font-family: "Nunito", sans-serif;
+    margin-left: 3%;
+    flex: 40%;
+    margin-top: 10%;
+    margin-bottom: 10%;
 }
 
-#prev {
-    left: 0;
+.nav-section a{
+    font-size: 24px;
+    text-decoration: none;
+    color: #1A2D5C;
+    font-weight: 800;
 }
 
-#next {
-    right: 0;
+.nav-item1, .nav-item2, .nav-item3, .nav-item4{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
 }
 
-.container-carrossel .fi{
-    font-size: 50px;
+.nav-item1, .nav-item2, .nav-item3{
+    border-bottom: 1px solid ; 
+    border-image: linear-gradient(to right, transparent, #1A2D5C , transparent) 1;
 }
 
-.container-carrossel:hover #prev, .container-carrossel:hover #next{
-    opacity: 1 !important;
+/*Golpes e Ataques na Internet*/
+b, strong{
+    color: #1A2D5C;
+    font-weight: 800;
 }
 
-/*Página Destaques*/
-
-section ol li{
-    margin-left: 2.5%;
-    margin-bottom: 3%;
+main section{
+    margin-top: 15%;
+    padding: 40px;
 }
 
-.alinha-imagem{
-    margin-top: 3%;
-    width: 100%;
-    text-align: center;
-    color: #B0B0B0;
-    font-size: 12px;
+.agrupar-listas{
+    display: flex;
+    flex-flow: row wrap;
 }
 
-.alinha-imagem img{
-    width: 60%;
-}
-
-h2{
-    margin: 0 auto;
+.lista1, .lista2{
+    flex: 40%;
+    margin-left: 5%;
 }
 
 /*Rodapé*/
@@ -290,7 +359,7 @@ footer{
 }
 
 footer h5{
-    font-family: "Roboto";
+    font-family: "Nunito";
     color: white;
 }
 
